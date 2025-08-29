@@ -1,0 +1,18 @@
+.venv/
+# MLflow
+mlruns/
+mlflow.db
+
+#Это под  контролем DVC
+data/
+models/
+
+
+#CatBoost 
+catboost_info/
+
+# Ноутбук  для обзора данных
+data_review.ipynb
+
+dvc.lock
+.dvcignore
