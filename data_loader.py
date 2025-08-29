@@ -2,6 +2,7 @@ import pandas as pd
 from sklearn.preprocessing import Normalizer
 from sklearn.model_selection import train_test_split
 import numpy as np
+import os
 
 
 df = pd.read_csv('data/raw/diabetes.csv')
@@ -70,6 +71,8 @@ X = pd.concat([X_numeric_normalized, X_categorical.reset_index(drop=True)], axis
 
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, shuffle=True)
+
+os.makedirs('data/processed', exist_ok=True)
 
 pd.concat([X_train, pd.DataFrame(y_train)], axis=1).to_csv('data/processed/train.csv', index=False)
 pd.concat([X_test, pd.DataFrame(y_test)], axis=1).to_csv('data/processed/test.csv', index=False)

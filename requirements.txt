@@ -1,8 +1,8 @@
 pandas
 scikit-learn
-mlflow == 2.8.1
-gunicorn==20.1.0
-greenlet==2.0.2
+mlflow 
+#gunicorn==20.1.0
+#greenlet==2.0.2
 dvc
 LightGBM
 CatBoost

@@ -6,6 +6,7 @@ from catboost import CatBoostClassifier
 from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score
 import mlflow
 import pickle
+import os
 
 def main():
     train = pd.read_csv("data/processed/train.csv")
@@ -103,7 +104,9 @@ def main():
             mlflow.log_param('test_size', len(X_test))
             
             mlflow.sklearn.log_model(model, "model")
-            
+
+            os.makedirs('models', exist_ok=True)
+
             model_filename = f"models/{model_config['name'].lower()}_{run_id}_model.pkl" #модели присваевается run_id из запуска ml_flow
             with open(model_filename, 'wb') as f:
                 pickle.dump(model, f)

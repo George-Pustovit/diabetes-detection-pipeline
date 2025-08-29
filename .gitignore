@@ -6,7 +6,6 @@ mlflow.db
 #Это под  контролем DVC
 data/processed/
 models/
-.dvc/
 
 #CatBoost 
 catboost_info/
@@ -14,5 +13,5 @@ catboost_info/
 # Ноутбук  для обзора данных
 data_review.ipynb
 
-dvc.lock
+
 .dvcignore

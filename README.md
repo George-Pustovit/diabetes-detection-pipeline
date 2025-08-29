@@ -68,7 +68,7 @@ cd diabetes-detection-pipeline
 python -m venv .venv
 source .venv/bin/activate  # Linux/macOS
 # или
-.\.venv\Scripts\activate  # Windows
+.\.venv\Scripts\activate  # Windows (используйте cmd, а не bash или powershell)
 ```
 
 ### 🔹 3. Установка зависимостей
