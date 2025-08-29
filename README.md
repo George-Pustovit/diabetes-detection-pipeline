@@ -7,7 +7,7 @@
 
 ## 📊 Описание датасета и задачи
 
-### Датасет: *Pima Indians Diabetes Database*  
+### Датасет: *Diabetes Database*  
 [📂 Kaggle — Diabetes Dataset](https://www.kaggle.com/datasets/mathchi/diabetes-data-set)
 
 **Цель:** предсказание наличия диабета (*бинарная классификация*).
