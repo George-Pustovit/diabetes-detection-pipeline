@@ -59,8 +59,8 @@
 
 ### 🔹 1. Клонирование репозитория
 ```bash
-git clone <your-repo-url>
-cd <your-repo-directory>
+git clone https://github.com/George-Pustovit/diabetes-detection-pipeline.git
+cd diabetes-detection-pipeline
 ```
 
 ### 🔹 2. Создание виртуального окружения
