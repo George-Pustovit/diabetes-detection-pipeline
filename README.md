@@ -68,7 +68,7 @@ cd <your-repo-directory>
 python -m venv .venv
 source .venv/bin/activate  # Linux/macOS
 # или
-.\.venv\Scriptsctivate  # Windows
+.\.venv\Scripts\activate  # Windows
 ```
 
 ### 🔹 3. Установка зависимостей
