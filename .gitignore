@@ -4,9 +4,9 @@ mlruns/
 mlflow.db
 
 #Это под  контролем DVC
-data/
+data/processed/
 models/
-
+.dvc/
 
 #CatBoost 
 catboost_info/
